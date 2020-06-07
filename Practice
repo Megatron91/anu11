@@ -1,0 +1,352 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colaboratory",
+      "provenance": [],
+      "collapsed_sections": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Megatron91/anu11/blob/master/Practice\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "colab_type": "text",
+        "id": "OwuxHmxllTwN"
+      },
+      "source": [
+        "## Machine learning\n",
+        "\n",
+        "With Colab you can import an image dataset, train an image classifier on it, and evaluate the model, all in just [a few lines of code](https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/quickstart/beginner.ipynb). Colab notebooks execute code on Google's cloud servers, meaning you can leverage the power of Google hardware, including [GPUs and TPUs](#using-accelerated-hardware), regardless of the power of your machine. All you need is a browser."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "colab_type": "text",
+        "id": "ufxBm1yRnruN"
+      },
+      "source": [
+        "Colab is used extensively in the machine learning community with applications including:\n",
+        "- Getting started with TensorFlow\n",
+        "- Developing and training neural networks\n",
+        "- Experimenting with TPUs\n",
+        "- Disseminating AI research\n",
+        "- Creating tutorials\n",
+        "\n",
+        "To see sample Colab notebooks that demonstrate machine learning applications, see the [machine learning examples](#machine-learning-examples) below."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "colab_type": "text",
+        "id": "-Rh3-Vt9Nev9"
+      },
+      "source": [
+        "## More Resources\n",
+        "\n",
+        "### Working with Notebooks in Colab\n",
+        "- [Overview of Colaboratory](/notebooks/basic_features_overview.ipynb)\n",
+        "- [Guide to Markdown](/notebooks/markdown_guide.ipynb)\n",
+        "- [Importing libraries and installing dependencies](/notebooks/snippets/importing_libraries.ipynb)\n",
+        "- [Saving and loading notebooks in GitHub](https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb)\n",
+        "- [Interactive forms](/notebooks/forms.ipynb)\n",
+        "- [Interactive widgets](/notebooks/widgets.ipynb)\n",
+        "- <img src=\"/img/new.png\" height=\"20px\" align=\"left\" hspace=\"4px\" alt=\"New\"></img>\n",
+        " [TensorFlow 2 in Colab](/notebooks/tensorflow_version.ipynb)\n",
+        "\n",
+        "<a name=\"working-with-data\"></a>\n",
+        "### Working with Data\n",
+        "- [Loading data: Drive, Sheets, and Google Cloud Storage](/notebooks/io.ipynb) \n",
+        "- [Charts: visualizing data](/notebooks/charts.ipynb)\n",
+        "- [Getting started with BigQuery](/notebooks/bigquery.ipynb)\n",
+        "\n",
+        "### Machine Learning Crash Course\n",
+        "These are a few of the notebooks from Google's online Machine Learning course. See the [full course website](https://developers.google.com/machine-learning/crash-course/) for more.\n",
+        "- [Intro to Pandas](/notebooks/mlcc/intro_to_pandas.ipynb)\n",
+        "- [Tensorflow concepts](/notebooks/mlcc/tensorflow_programming_concepts.ipynb)\n",
+        "- [First steps with TensorFlow](/notebooks/mlcc/first_steps_with_tensor_flow.ipynb)\n",
+        "- [Intro to neural nets](/notebooks/mlcc/intro_to_neural_nets.ipynb)\n",
+        "- [Intro to sparse data and embeddings](/notebooks/mlcc/intro_to_sparse_data_and_embeddings.ipynb)\n",
+        "\n",
+        "<a name=\"using-accelerated-hardware\"></a>\n",
+        "### Using Accelerated Hardware\n",
+        "- [TensorFlow with GPUs](/notebooks/gpu.ipynb)\n",
+        "- [TensorFlow with TPUs](/notebooks/tpu.ipynb)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "colab_type": "text",
+        "id": "P-H6Lw1vyNNd"
+      },
+      "source": [
+        "<a name=\"machine-learning-examples\"></a>\n",
+        "\n",
+        "## Machine Learning Examples\n",
+        "\n",
+        "To see end-to-end examples of the interactive machine learning analyses that Colaboratory makes possible, check out the [AI Hub](https://aihub.cloud.google.com/) project.\n",
+        "\n",
+        "A few featured examples:\n",
+        "\n",
+        "- [Neural Style Transfer](https://aihub.cloud.google.com/p/products%2F7f7495dd-6f66-4f8a-8c30-15f211ad6957): Use deep learning to transfer style between images.\n",
+        "- [EZ NSynth](https://aihub.cloud.google.com/p/products%2Fcddd17cf-5f86-4ce7-b6b6-03c5e52ee0fb): Synthesize audio with WaveNet auto-encoders.\n",
+        "- [Fashion MNIST with Keras and TPUs](https://aihub.cloud.google.com/p/products%2F7a0acf15-0be0-41a6-9bdb-5a5abd4e8fbf): Classify fashion-related images with deep learning.\n",
+        "- [DeepDream](https://aihub.cloud.google.com/p/products%2Ff9e8fc11-ad0f-410a-bebe-2482066ce570): Produce DeepDream images from your own photos.\n",
+        "- [Convolutional VAE](https://aihub.cloud.google.com/p/products%2Ff5e8dd20-6b34-44a0-bc45-6e345e36a4e7): Create a generative model of handwritten digits."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "amMPoBQhw2m6",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 221
+        },
+        "outputId": "f77fc644-a53a-43cb-e734-4daab9279c7d"
+      },
+      "source": [
+        "import pandas as pd\n",
+        "import numpy as np\n",
+        "df=pd.read_csv('/auto-mpg.csv')\n",
+        "\n",
+        "print(df.shape)\n",
+        "df.T\n",
+        "df.T.shape\n",
+        "df.head()"
+      ],
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "(398, 9)\n"
+          ],
+          "name": "stdout"
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/html": [
+              "<div>\n",
+              "<style scoped>\n",
+              "    .dataframe tbody tr th:only-of-type {\n",
+              "        vertical-align: middle;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe tbody tr th {\n",
+              "        vertical-align: top;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe thead th {\n",
+              "        text-align: right;\n",
+              "    }\n",
+              "</style>\n",
+              "<table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              "    <tr style=\"text-align: right;\">\n",
+              "      <th></th>\n",
+              "      <th>mpg</th>\n",
+              "      <th>cylinders</th>\n",
+              "      <th>displacement</th>\n",
+              "      <th>horsepower</th>\n",
+              "      <th>weight</th>\n",
+              "      <th>acceleration</th>\n",
+              "      <th>model year</th>\n",
+              "      <th>origin</th>\n",
+              "      <th>car name</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>0</th>\n",
+              "      <td>18.0</td>\n",
+              "      <td>8</td>\n",
+              "      <td>307.0</td>\n",
+              "      <td>130</td>\n",
+              "      <td>3504</td>\n",
+              "      <td>12.0</td>\n",
+              "      <td>70</td>\n",
+              "      <td>1</td>\n",
+              "      <td>chevrolet chevelle malibu</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>1</th>\n",
+              "      <td>15.0</td>\n",
+              "      <td>8</td>\n",
+              "      <td>350.0</td>\n",
+              "      <td>165</td>\n",
+              "      <td>3693</td>\n",
+              "      <td>11.5</td>\n",
+              "      <td>70</td>\n",
+              "      <td>1</td>\n",
+              "      <td>buick skylark 320</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>2</th>\n",
+              "      <td>18.0</td>\n",
+              "      <td>8</td>\n",
+              "      <td>318.0</td>\n",
+              "      <td>150</td>\n",
+              "      <td>3436</td>\n",
+              "      <td>11.0</td>\n",
+              "      <td>70</td>\n",
+              "      <td>1</td>\n",
+              "      <td>plymouth satellite</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>3</th>\n",
+              "      <td>16.0</td>\n",
+              "      <td>8</td>\n",
+              "      <td>304.0</td>\n",
+              "      <td>150</td>\n",
+              "      <td>3433</td>\n",
+              "      <td>12.0</td>\n",
+              "      <td>70</td>\n",
+              "      <td>1</td>\n",
+              "      <td>amc rebel sst</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>4</th>\n",
+              "      <td>17.0</td>\n",
+              "      <td>8</td>\n",
+              "      <td>302.0</td>\n",
+              "      <td>140</td>\n",
+              "      <td>3449</td>\n",
+              "      <td>10.5</td>\n",
+              "      <td>70</td>\n",
+              "      <td>1</td>\n",
+              "      <td>ford torino</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table>\n",
+              "</div>"
+            ],
+            "text/plain": [
+              "    mpg  cylinders  displacement  ... model year  origin                   car name\n",
+              "0  18.0          8         307.0  ...         70       1  chevrolet chevelle malibu\n",
+              "1  15.0          8         350.0  ...         70       1          buick skylark 320\n",
+              "2  18.0          8         318.0  ...         70       1         plymouth satellite\n",
+              "3  16.0          8         304.0  ...         70       1              amc rebel sst\n",
+              "4  17.0          8         302.0  ...         70       1                ford torino\n",
+              "\n",
+              "[5 rows x 9 columns]"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 11
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "C9rGoRnQ1AvT",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 204
+        },
+        "outputId": "1b739e32-92b1-4cce-835b-2f986488b3c8"
+      },
+      "source": [
+        "df[['mpg','cylinders']].head()"
+      ],
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/html": [
+              "<div>\n",
+              "<style scoped>\n",
+              "    .dataframe tbody tr th:only-of-type {\n",
+              "        vertical-align: middle;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe tbody tr th {\n",
+              "        vertical-align: top;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe thead th {\n",
+              "        text-align: right;\n",
+              "    }\n",
+              "</style>\n",
+              "<table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              "    <tr style=\"text-align: right;\">\n",
+              "      <th></th>\n",
+              "      <th>mpg</th>\n",
+              "      <th>cylinders</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>0</th>\n",
+              "      <td>18.0</td>\n",
+              "      <td>8</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>1</th>\n",
+              "      <td>15.0</td>\n",
+              "      <td>8</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>2</th>\n",
+              "      <td>18.0</td>\n",
+              "      <td>8</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>3</th>\n",
+              "      <td>16.0</td>\n",
+              "      <td>8</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>4</th>\n",
+              "      <td>17.0</td>\n",
+              "      <td>8</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table>\n",
+              "</div>"
+            ],
+            "text/plain": [
+              "    mpg  cylinders\n",
+              "0  18.0          8\n",
+              "1  15.0          8\n",
+              "2  18.0          8\n",
+              "3  16.0          8\n",
+              "4  17.0          8"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 16
+        }
+      ]
+    }
+  ]
+}
